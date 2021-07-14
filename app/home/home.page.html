@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-title>Home</ion-title>
+      <!-- Menu Icon -->
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- POSITIONING ANY COMPONENT  -->
+  <ion-card>
+    <ion-card-content>
+      <div class="ion-text-center">
+        <ion-card-title>Center Any Component</ion-card-title>
+        <ion-button color="primary" routerLink="/page-name">Go To Page</ion-button>
+    </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- CARD + GRID COMPONENT WITH ICONS -->
+  <ion-card>
+    <ion-grid>
+        <ion-row class="ion-text-center">
+            <ion-col size="4" routerLink="/home">
+                <ion-icon name="home" color="danger" size="large"></ion-icon>
+                <p>Home</p>
+            </ion-col>
+            <ion-col size="4" routerLink="/about">
+                <ion-icon name="bag-add" color="danger" size="large"></ion-icon>
+                <p>About</p>
+            </ion-col>
+            <ion-col size="4" routerLink="/contact">
+                <ion-icon name="chatbox" color="danger" size="large"></ion-icon>
+                <p>Contact</p>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-card>
+
+  <!-- CARD + LIST MENU -->
+  <ion-card>
+    <ion-list>
+      <ion-item routerLink="/about">
+          <ion-icon slot="start" name="man" color="danger"></ion-icon>
+          <ion-label>About us</ion-label>
+      </ion-item>
+      <ion-item routerLink="/contact">
+          <ion-icon slot="start" name="book" color="danger"></ion-icon>
+          <ion-label>Contact us</ion-label>
+      </ion-item>
+  </ion-list>
+  </ion-card>
+
+
+  <!--CARD + LINKS-->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>My Links</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <a href="https://google.com">Google</a> <br>
+      <a href="https://facebook.com">Facebook</a> <br>
+      <a href="https://amazon.com">Amazon</a>
+    </ion-card-content>
+  </ion-card>
+
+<!--CARD + EMBEDED VIDEO COMPONENT -->
+<ion-card color="tertiary">
+  <ion-card-header>
+    <ion-card-title>My videos</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/1WLMahXDnuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </ion-card-content>
+</ion-card>
+
+<!--CARD + AUDIO COMPONENT -->
+<ion-card color="secondary">
+  <ion-card-header>
+    <ion-card-title>My music</ion-card-title>
+  </ion-card-header>
+  <ion-card-content> 
+    <audio src="/assets/audio/pop.mp3" controls></audio>
+  </ion-card-content>
+</ion-card>
+
+  <!-- CARD + IMAGE + BUTTON COMPONENT -->
+  <ion-card color="danger" >
+    <ion-card-header>
+      <ion-card-title>My pictures</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img src="/assets/images/capetown.jpg"></ion-img>
+      <ion-button color="primary" routerLink="/about" expand="block">Go To Page</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
